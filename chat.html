@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KeyChat | Chat</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="chat-body">
+
+  <div class="chat-wrapper">
+
+    <div class="chat-header">
+      <h2>KeyChat</h2>
+
+      <div class="chat-status">
+        <span id="statusText">Waiting…</span>
+        <span id="userCount">1 online</span>
+      </div>
+
+      <button class="leave-btn" id="leaveBtn">Leave</button>
+    </div>
+
+    <div class="chat-box" id="chatBox"></div>
+
+    <div class="chat-input">
+      <input type="file" id="mediaInput" hidden>
+      <button class="media-btn" id="mediaBtn">📎</button>
+
+      <input type="text" id="msgInput" placeholder="Type a message...">
+      <button class="send-btn" id="sendBtn">Send</button>
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
