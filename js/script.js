@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ================= HOME PAGE ================= */
   /* ================= HOME PAGE ================= */
-if (page.includes("home")) {
+  const createIdBtn = document.getElementById("createIdBtn");
+if (createIdBtn) {
+  if (page.includes("home")) {
 
   const createIdBtn = document.getElementById("createIdBtn");
   const joinChatBtn = document.getElementById("joinChatBtn");
@@ -29,10 +31,17 @@ if (page.includes("home")) {
     window.location.href = "chat.html";
   };
 }
+}
+
+  
+
 
 
   /* ================= CHAT PAGE ================= */
-  if (page.includes("chat")) {
+
+  const sendBtn = document.getElementById("sendBtn");
+if (sendBtn) {
+   if (page.includes("chat")) {
 
     const roomId = sessionStorage.getItem("roomId");
     const statusText = document.getElementById("statusText");
@@ -99,6 +108,9 @@ const chatBox = document.getElementById("chatBox");
       addMessage(text, "you");
       msgInput.value = "";
     }
+}
+
+ 
 
     /* ================= IMAGE SEND (ONLY IMAGE) ================= */
     function sendImage(file) {
